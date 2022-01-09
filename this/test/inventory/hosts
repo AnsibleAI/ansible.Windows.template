@@ -1,0 +1,17 @@
+[local]
+localhost
+
+[local:vars]
+ansible_connection=local
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=me
+ansible_become_password=u
+
+[windows]
+192.168.1.138
+
+[windows:vars]
+ansible_user=test
+ansible_password=11311
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore ## ignore certificate validation because we'll just be using a self-signed certificate that comes with Ansible

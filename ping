@@ -1,0 +1,1 @@
+ansible windows -m win_ping
