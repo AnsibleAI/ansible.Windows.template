@@ -12,6 +12,6 @@ ansible_become_password=u
 
 [windows:vars]
 ansible_user=test
-ansible_password=11311
+ansible_password="11311"
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore ## ignore certificate validation because we'll just be using a self-signed certificate that comes with Ansible
